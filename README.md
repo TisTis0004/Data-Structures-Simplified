@@ -65,6 +65,18 @@ Also similiar to insertion, using `stock_prices.remove(1)` so:
 ---
 ## Dictionary
 
+One of the most importnat and widely used data structures in interviews and real-world situations. A dictionary stores data in key-value pairs which is AKA object in other programming languages.
+
+type: <class 'dict'>
+
+Main attributes:
+
+1) `Ordered`: When we say that dictionaries are ordered, it means that the items have a defined order we initalized when creating the dict AKA `insertion ordered`, and that order will not change.
+
+2) `Mutable`: The dictionary is changeable, meaning that we can change, add, and remove items in a dict after it has been created.
+
+3) `Duplicates Not Allowed`: Cannot have two items with the **same key**
+
 ---
 
 ## Linkedlist
