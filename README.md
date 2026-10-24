@@ -45,7 +45,7 @@ Example and visualization:
 #### Lookup by index = O(1)
 
 ### Scenraio 2: On what day price was 301?
-Here we need to go through the whole list via either of the ways we used [here](src/list.py), so:
+Here we need to go through the whole list via either of the ways we used [here](src/List/list.py), so:
 #### Lookup by value = O(N)
 
 ### Scenario 3: Print all the prices
