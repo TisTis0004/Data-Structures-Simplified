@@ -32,7 +32,7 @@ Main attributes:
 You can get the length of a list using `len(list)`.
 
 
-Check and run this [file](src/list.py) to see the different ways to traverse through a list:
+Check and run this [file](src/List/list.py) to see the different ways to traverse through a list:
 ```bash
 python src/list.py
 ```
