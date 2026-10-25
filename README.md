@@ -79,8 +79,25 @@ Main attributes:
 
 ---
 
-## Linkedlist
+## Linked List
+![LinkedList](assets/linkedlists_singly.svg)
 
+The same as a regualr list but each element has `two pieces of information`: 1.The value, 2. Pointer for the next value.
+Each location in the linked list is called ***Node***.
+The first element is called *Head*.
+
+(Head) 100 -> 200 -> 300 -> 400 -> 500 -> None
+
+- Insert element at the beginning = O(1)
+- Delete element at the beginning = O(1)
+
+`In the regular list any modification had the complexity of O(N)`
+
+- Insert/Delete element at the `end` = O(n)
+
+### Doubly Linked List
+![Doubly LinkedList](assets/doubly_linkedlist.png)
+The same as the linkedlist but each Node has an additional piece of information which `previous` that is pointing to the previous node.
 ---
 
 ## HashTable
