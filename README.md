@@ -101,6 +101,9 @@ The same as the linkedlist but each Node has an additional piece of information 
 ---
 
 ## HashTable
+"Dictionary is the python specific implementation of the hash table" Technically this is all you need to know.
+
+But there are more to it...
 
 ---
 
