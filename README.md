@@ -103,7 +103,29 @@ The same as the linkedlist but each Node has an additional piece of information 
 ## HashTable
 "Dictionary is the python specific implementation of the hash table" Technically this is all you need to know.
 
-But there are more to it...
+But there is more to it...
+
+A hash table maps keys to values for highly efficient lookups. Under the hood, it uses an array. Instead of searching through every element (which takes O(N) time), it uses a **Hash Function**. 
+
+The hash function takes a key, converts it into an integer, and uses a modulo operator (`hash % size`) to determine the exact index in the array where the value should be stored. This allows us to jump straight to the data.
+
+- Average Insert/Delete/Lookup = **O(1)**
+- Worst Case Insert/Delete/Lookup = **O(N)** (if everything collides)
+
+### The Collision Issue
+Because array sizes are limited, sometimes the hash function will output the exact same index for two entirely different keys. When this happens, the new data threatens to overwrite the old data. 
+
+To prevent data loss, we use **Collision Resolution Strategies**:
+
+#### 1. Chaining
+Instead of storing one value per index, each index in the array holds a List (or Linked List). When a collision happens, the new key-value pair is simply appended to the list at that index.
+
+#### 2. Open Addressing (Linear Probing)
+Each index holds only one pair. If a collision happens, the algorithm steps forward to the next available index (`index + 1`) and places the data in the first empty slot it finds. 
+
+Check and run this [file](src/HashTable/hashtable.py) to see both strategies implemented in action, step-by-step:
+```bash
+python src/HashTable/hashtable.py
 
 ---
 
